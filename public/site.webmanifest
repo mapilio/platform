@@ -1,0 +1,8 @@
+{
+  "theme_color": "#0056f1",
+  "background_color": "#0056f1",
+  "display": "browser",
+  "start_url": "/",
+  "short_name": "Mapilio",
+  "name": "Mapilio.com"
+}

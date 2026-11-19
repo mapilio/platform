@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-09-28",
+  "source": "Production database and public APIs, read-only checks",
+  "owner": "Mapilio backend maintainers",
+  "metrics": [
+    { "value": 20328577, "label": "Image records" },
+    { "value": 72, "label": "Countries & territories", "description": "In the stored country summary" },
+    { "value": 462, "label": "Object classes", "description": "Active entries in the object catalog" },
+    { "value": 281, "label": "Uploading accounts" },
+    { "value": 1719, "label": "Registered accounts" }
+  ],
+  "note": "Image records exclude deleted records and records flagged as anomalous; they are not a count of individually verified public images. Uploading accounts exclude internal roles. Registered accounts include people who have not uploaded. The country summary has its own filters and an unverified refresh date; it is not a live coverage count. Object classes describe the catalog, not verified AI model support."
+}
