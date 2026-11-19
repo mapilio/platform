@@ -1,0 +1,52 @@
+name: Idea or feedback
+description: Suggest a change, a new feature or tell us what you think of the design
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The design is in beta and nothing is final, so this is the right place for "I'd expect it to work like this" as well as new ideas.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where?
+      options:
+        - Map (/app)
+        - Street viewer (/app/walk)
+        - Edit in iD
+        - Homepage (/)
+        - Daily five (/app/play)
+        - Drone demo
+        - The whole site
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The problem or the goal, before any solution.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help?
+      description: Your idea. A sketch, a screenshot or an example from another tool helps.
+    validations:
+      required: true
+  - type: dropdown
+    id: who
+    attributes:
+      label: Who is it for?
+      multiple: true
+      options:
+        - OpenStreetMap mappers
+        - Photo contributors
+        - Visitors
+        - Developers
+  - type: input
+    id: editor
+    attributes:
+      label: Which editor do you map with?
+      description: Only if it's about mapping.
+      placeholder: iD, JOSM, Rapid, StreetComplete, …

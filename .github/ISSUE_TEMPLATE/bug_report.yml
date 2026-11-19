@@ -1,0 +1,53 @@
+name: Bug report
+description: Something on the site doesn't work as it should
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. Please check that it isn't already reported.
+        A face or licence plate that isn't blurred, or a photo you want removed? Don't post it here; email info@mapilio.com.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where?
+      options:
+        - Map (/app)
+        - Street viewer (/app/walk)
+        - Edit in iD
+        - Homepage (/)
+        - Daily five (/app/play)
+        - Drone demo
+        - Somewhere else
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      description: Copy the address bar. The map and the viewer keep your position in it.
+      placeholder: https://dev.mapilio.com/app?lat=…&lng=…&zoom=…
+  - type: textarea
+    id: steps
+    attributes:
+      label: What happened?
+      description: What you did, what you expected and what happened instead.
+      placeholder: |
+        1. Open the link
+        2. Click …
+        Expected: …
+        Actual: …
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and device
+      placeholder: Firefox 133 on Windows 11, Safari on iPhone 15, …
+    validations:
+      required: true
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshots or a recording
+      description: Optional. Drag files into this box.

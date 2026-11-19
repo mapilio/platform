@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: A photo that needs blurring or removal
+    url: https://mapilio.com/contact
+    about: Faces, licence plates or a photo you want removed. Please don't post these publicly; email info@mapilio.com.
+  - name: Account or upload problem
+    url: https://mapilio.com/contact
+    about: Problems with your Mapilio account or uploads on mapilio.com.
+  - name: Mobile app
+    url: https://github.com/mapilio/mobile-apps/issues
+    about: Bugs and ideas for the iOS and Android app.
